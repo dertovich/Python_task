@@ -63,6 +63,7 @@ y = 0
 result = 0
 
 while True:
+    print("Программа находит наибольший общий делитель двух чисел")
     x, y = input_nums()
     print("Считаю циферки...")
     time.sleep(0.6)

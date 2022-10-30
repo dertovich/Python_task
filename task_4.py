@@ -97,6 +97,7 @@ x = 0
 y = 0
 work = 1
 while work != 'q':
+    print("Программа находит наибольший общий делитель двух чисел")
     program_logging('Start')
     x, y = input_nums()
     print("Считаю циферки...")
