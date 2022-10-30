@@ -35,7 +35,7 @@ def quit_program(a):
         program_logging('Null')
         print("Ошибка! Необходимо ненулевое число")
         exit(-1)
-    if a == "rm":
+    if a == "rm logs":
         os.remove('logs/logs.txt')
         os.rmdir('logs')
         print("Логи удалены")
