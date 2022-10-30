@@ -5,14 +5,17 @@ import datetime
 # Функция нахождения наибольшего общего делителя
 def nod_search(a, b):
     nod = 0
-    if int(float(a)) > int(float(b)):
-        temp = int(float(b))
+    var_1 = abs(int(float(a)))
+    var_2 = abs(int(float(b)))
+    if var_1 > var_2:
+        temp = var_2
     else:
-        temp = int(float(a))
+        temp = var_1
     for i in range(1, temp + 1):
-        if (int(float(a)) % i == 0) and (int(float(b)) % i == 0):
+        if (var_1 % i == 0) and (var_2 % i == 0):
             nod = i
     return nod
+
 
 
 # Функция завершения работы программы при подаче
