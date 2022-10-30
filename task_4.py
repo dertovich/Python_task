@@ -5,12 +5,12 @@ import datetime
 # Функция нахождения наибольшего общего делителя
 def nod_search(a, b):
     nod = 0
-    if int(float(a)) > int(b):
-        temp = int(b)
+    if int(float(a)) > int(float(b)):
+        temp = int(float(b))
     else:
         temp = int(float(a))
     for i in range(1, temp + 1):
-        if (int(float(a)) % i == 0) and (int(b) % i == 0):
+        if (int(float(a)) % i == 0) and (int(float(b)) % i == 0):
             nod = i
     return nod
 
@@ -48,7 +48,7 @@ def input_nums():
         num2 = input("Введите второе число: ")
         quit_program(num2)
         flag = False
-        if num1.isnumeric() != True or num2.isnumeric() != True:
+        if num1.isalpha() == True or num2.isalpha() == True:
             print("Введите число, пожалуйста")
             flag = True
         if num1 == "" or num2 == "":
